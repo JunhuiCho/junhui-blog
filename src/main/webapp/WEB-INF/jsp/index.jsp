@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/blog">Home</a>
+                        <a href="/list">Home</a>
                     </li>
                     <li>
                         <a href="#about.html">About</a>
@@ -76,7 +76,7 @@
                             ${post.title}
                         </h2>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Origoni</a> on 2017.03.26</p>
+                    <p class="post-meta">Posted by <a href="#">Origoni</a> on ${post.reg_date}</p>
                 </div>
                 <hr>
     		</c:forEach>
