@@ -3,6 +3,7 @@ package com.junhui00.blog;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 /**
  * Created by BonE on 2017. 3. 5..
@@ -16,6 +17,8 @@ public class Post {
     String title;
 
     String content;
+
+    Date reg_date;
 
     public int getId(){
         return id;
@@ -39,5 +42,13 @@ public class Post {
 
     public void setContent(String content){
         this.content = content;
+    }
+
+    public Date getReg_date() {
+        return reg_date;
+    }
+
+    public void setReg_date(Date reg_date) {
+        this.reg_date = reg_date;
     }
 }

@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.validation.Valid;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -56,13 +58,12 @@ public class SampleController {
 
     @RequestMapping("/write")
     public String write(Model model) {
-//        model.addAttribute("name", "123");
         return "write";
     }
 
     @RequestMapping("/writePost")
-    public @ResponseBody Post writePost(Post post){
-
+    public @ResponseBody Post writePost(@Valid Post post){
+        post.setReg_date(new Date());
         Post postData = postDao.save(post);
 
         return postData;
