@@ -26,4 +26,9 @@ public class SampleController {
         return "index";
     }
 
+    @RequestMapping("/ping")
+    public String ping(){
+        return "ping";
+    }
+
 }
