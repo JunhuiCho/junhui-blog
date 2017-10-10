@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.Valid;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 @RequestMapping("/post")
@@ -30,9 +31,9 @@ public class PostController {
     }
 
     @RequestMapping("/{id}")
-    public String view(Model model, @PathVariable int id){
+    public String view(Model model, @PathVariable int id) {
         Post post = postDao.findOne(id);
-        model.addAttribute("post",post);
+        model.addAttribute("post", post);
         return "post";
     }
 
