@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -26,6 +27,7 @@ public class SampleController {
     @RequestMapping("/index")
     public String posts(Model model){
         List<Post> postList = postDao.findAll();
+        Collections.reverse(postList);
         model.addAttribute("postList", postList);
 
         return "index";
