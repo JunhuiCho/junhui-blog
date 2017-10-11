@@ -122,7 +122,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; Junhui Cho 2017</p>
                 </div>
             </div>
         </div>
@@ -131,6 +131,7 @@
 	<script src="/webjars/jquery/2.1.3/dist/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/3.3.4/dist/js/bootstrap.min.js"></script>
 	<script src="/webjars/origoni-startbootstrap-clean-blog/1.0.3/js/clean-blog.min.js"></script>
+    <script id="dsq-count-scr" src="//junhui-blog.disqus.com/count.js" async></script>
 </body>
 </html>
 

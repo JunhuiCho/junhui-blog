@@ -20,7 +20,7 @@
             <h1>Title</h1>
             <input type="text" name="title" class="form-control">
             <h1>Content</h1>
-            <textarea name="content" class="form-control" rows="20"></textarea>
+            <textarea id="summernote" name="content" class="form-control" rows="20"></textarea>
             <br>
             <input type="submit" value="submit" class="btn btn-primary">
         </div>
