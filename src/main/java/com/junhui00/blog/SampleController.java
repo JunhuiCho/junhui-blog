@@ -31,6 +31,11 @@ public class SampleController {
         return "index";
     }
 
+    @RequestMapping("/write")
+    public String write(Model model) {
+        return "redirect:/post/write";
+    }
+
     @RequestMapping("/about")
     public String about(Model model){
         return "about";
