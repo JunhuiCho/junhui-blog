@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading-heading">
+                <div class="post-heading">
                     <h1>About Blog</h1>
                     <hr class="small">
-                    <span class="meta">Posted by <a href="'#">Junhui Cho</a> on <fmt:formatDate value="${post.reg_date}" pattern="yyyy-MM-dd" /> </span>
+                    <span class="meta">Posted by <a href="#">Junhui Cho</a></span>
                 </div>
             </div>
         </div>
