@@ -36,6 +36,11 @@ public class SampleController {
         return "about";
     }
 
+    @RequestMapping("/contact")
+    public String contact(Model model){
+        return "contact";
+    }
+
     @RequestMapping("/ping")
     public String ping(){
         return "ping";
