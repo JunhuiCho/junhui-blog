@@ -17,13 +17,23 @@ public class SampleController {
 
     @Autowired
     private PostDao postDao;
-    
+
+    @RequestMapping("/")
+    public String root(Model model) {
+        return posts(model);
+    }
+
     @RequestMapping("/index")
     public String posts(Model model){
         List<Post> postList = postDao.findAll();
         model.addAttribute("postList", postList);
 
         return "index";
+    }
+
+    @RequestMapping("/about")
+    public String about(Model model){
+        return "about";
     }
 
     @RequestMapping("/ping")

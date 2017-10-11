@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.Valid;
 import java.util.Date;
-import java.util.List;
 
 @Controller
 @RequestMapping("/post")

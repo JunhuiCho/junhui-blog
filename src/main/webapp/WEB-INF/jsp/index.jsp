@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hello Spring Blog</title>
+<title>JHCB - Junhui's Casual Blog</title>
 <link rel="stylesheet" href="/webjars/bootstrap/3.3.4/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="/webjars/origoni-startbootstrap-clean-blog/1.0.3/css/clean-blog.min.css">
 </head>
@@ -23,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="/">JHCB</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,13 +34,10 @@
                         <a href="/list">Home</a>
                     </li>
                     <li>
-                        <a href="#about.html">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li>
-                        <a href="/post">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="#contact.html">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -55,9 +53,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>JHCB</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">Junhui's Casual Blog</span>
                     </div>
                 </div>
             </div>
@@ -76,7 +74,7 @@
                             ${post.title}
                         </h2>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Origoni</a> on ${post.reg_date}</p>
+                    <p class="post-meta">Posted by <a href="#">Junhui Cho</a> on <fmt:formatDate value="${post.reg_date}" pattern="yyyy-MM-dd" /></p>
                 </div>
                 <hr>
     		</c:forEach>

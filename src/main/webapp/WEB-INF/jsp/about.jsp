@@ -1,5 +1,4 @@
 <%@include file="header.jsp"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
@@ -7,8 +6,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>${post.title}</h1>
+                <div class="post-heading-heading">
+                    <h1>About Blog</h1>
                     <hr class="small">
                     <span class="meta">Posted by <a href="'#">Junhui Cho</a> on <fmt:formatDate value="${post.reg_date}" pattern="yyyy-MM-dd" /> </span>
                 </div>
@@ -22,12 +21,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                ${post.content}
+                This is My private blog and this blog is mainly about gaming entertainment and my personal opinions on various topics. Most of the blog posts are based on my own personal experiences or views, so if you have any comments, please contact me (junhuicho8@gmail.com) or leave comments below.
             </div>
         </div>
     </div>
 </article>
 
 <%@include file="footer.jsp"%>
-
-
