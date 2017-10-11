@@ -23,10 +23,9 @@ public class PostController {
     }
 
     @RequestMapping("/writePost")
-    public @ResponseBody Post writePost(@Valid Post post){
+    public String writePost(@Valid Post post){
         post.setReg_date(new Date());
-        Post postData = postDao.save(post);
-        return postData;
+        return "redirect:/post/" + postDao.save(post).getId();
     }
 
     @RequestMapping("/{id}")
